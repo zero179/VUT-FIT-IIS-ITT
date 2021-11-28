@@ -1,0 +1,46 @@
+{
+  "name": "is_proj",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@auth0/nextjs-auth0": "^1.6.1",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@hookform/resolvers": "^2.8.3",
+    "@mui/lab": "^5.0.0-alpha.53",
+    "@mui/material": "^5.0.6",
+    "@tabler/icons": "^1.42.0",
+    "@types/auth0": "^2.34.4",
+    "@types/yup": "^0.29.13",
+    "apollo-server-micro": "^3.4.0",
+    "auth0": "^2.37.0",
+    "dayjs": "^1.10.7",
+    "graphql": "^16.0.1",
+    "latinize": "^0.5.0",
+    "micro": "^9.3.4",
+    "micro-cors": "^0.1.1",
+    "mongoose": "^6.0.12",
+    "next": "12.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.20.1",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/latinize": "^0.2.15",
+    "@types/micro-cors": "^0.1.2",
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.33",
+    "@types/uuid": "^8.3.1",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "typescript": "4.4.4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "api"
+		},
+		{
+			"path": "models"
+		},
+		{
+			"path": "pages"
+		},
+		{
+			"path": "public"
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "styles"
+		}
+	]
+}
