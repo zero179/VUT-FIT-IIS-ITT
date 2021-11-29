@@ -1,4 +1,4 @@
-import IUser from "./User";
+import {IUser} from "./User";
 import {IPaging} from "./Paging";
 
 export interface IUserResponse {
