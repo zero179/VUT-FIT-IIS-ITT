@@ -1,5 +1,5 @@
 import Context from "../context";
-import Role from "../../../models/Role";
+import {IRole as Role} from "../../../models/Role";
 import {createRole, deleteRole, getRole, getRoles, updateRole} from "../../service/role";
 import {requireRoles} from "../../security/requireRoles";
 
