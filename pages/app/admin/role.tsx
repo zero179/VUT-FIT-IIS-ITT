@@ -61,7 +61,7 @@ const AppAdminRoles: NextPage = () => {
                                     display="flex"
                                     alignItems="center"
                                 >
-                                    Role
+                                    File
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} md="auto" mt={2} ml="auto" display="flex"

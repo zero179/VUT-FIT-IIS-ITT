@@ -1,4 +1,4 @@
-import User from "../../../models/User";
+import {IUser} from "../../../models/User";
 import {IconButton, TableCell, Typography, Link} from "@mui/material";
 import {IconEdit, IconHistory, IconTrash} from "@tabler/icons";
 import EnhancedTable from "../EnhancedTable";
@@ -34,7 +34,7 @@ const UsersTable = (
         onEdit,
         onDelete,
     }: {
-        users: User[]
+        users: IUser[]
         onEdit?: (id: string) => (event: SyntheticEvent) => void
         onDelete?: (id: string) => (event: SyntheticEvent) => void
     }
@@ -92,7 +92,7 @@ const UsersTable = (
                                     <IconHistory/>
                                 </IconButton>
                             </Link>
-                            <IconButton>
+                            <IconButton onClick={onDelete ? onDelete(user.id) : undefined}>
                                 <IconTrash/>
                             </IconButton>
                         </TableCell>

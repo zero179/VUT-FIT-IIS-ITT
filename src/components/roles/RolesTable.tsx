@@ -1,4 +1,4 @@
-import Role from "../../../models/Role";
+import {IRole} from "../../../models/Role";
 import {IconButton, TableCell, Typography} from "@mui/material";
 import {IconEdit, IconTrash} from "@tabler/icons";
 import EnhancedTable from "../EnhancedTable";
@@ -30,7 +30,7 @@ const RolesTable = (
         onEdit,
         onDelete,
     }: {
-        roles: Role[]
+        roles: IRole[]
         onEdit?: (id: string) => (event: SyntheticEvent) => void
         onDelete?: (id: string) => (event: SyntheticEvent) => void
     }

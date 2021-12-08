@@ -2,7 +2,7 @@ import {TreeItem, TreeView} from "@mui/lab";
 import {SyntheticEvent, useContext, useEffect, useMemo, useState} from "react";
 import {EXPANDED_DRAWER_WIDTH, IMainLayoutContext, MainLayoutContext} from "./MainLayout";
 import {Box, Typography} from "@mui/material";
-import {IconCertificate, IconChevronDown, IconChevronUp, IconDashboard, IconMan, IconUsers} from "@tabler/icons";
+import {IconAlien, IconCertificate, IconChevronDown, IconChevronUp, IconDashboard, IconFile, IconFiles, IconMan, IconUsers} from "@tabler/icons";
 import {useRouter} from "next/router";
 
 const TreeItemLabel = ({icon, labelText, endIcon}: { icon?: any, labelText: string, endIcon?: any }) => {
@@ -87,6 +87,8 @@ const Menu = () => {
                               label={<TreeItemLabel icon={<IconCertificate stroke={1.5}/>} labelText="Role"/>}/>
                     <TreeItem nodeId="link:/admin/uzivatele"
                               label={<TreeItemLabel icon={<IconUsers stroke={1.5}/>} labelText="Uživatelé"/>}/>
+                    <TreeItem nodeId="link:/admin/file"
+                              label={<TreeItemLabel icon={<IconFiles stroke={1.5}/>} labelText="Soubory"/>}/>
                 </>}
             </TreeItem>
         </TreeView>

@@ -2,7 +2,7 @@ import {Box, Button, CircularProgress, Dialog, DialogActions, DialogContent, Dia
 import {SyntheticEvent, useContext} from "react";
 import {RoleModalIdContext} from "../../../pages/app/admin/role";
 import {gql, useQuery} from "@apollo/client";
-import Role from "../../../models/Role";
+import {IRole} from "../../../models/Role";
 
 const query = gql`
     query GetRole($id: String!) {
@@ -36,7 +36,7 @@ const RoleFormDialog = (
     })
 
     const createRoleContent = () => {
-        const role: Role = data?.getRole;
+        const role: IRole = data?.getRole;
 
         return <>
             {/*  TODO: This is gonna be a form, which has to be done by @jhwebgang  */}

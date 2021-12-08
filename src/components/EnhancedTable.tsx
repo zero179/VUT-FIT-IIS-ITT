@@ -2,7 +2,7 @@ import {Checkbox, CircularProgress, Table, TableBody, TableCell, TablePagination
 import {ReactFragment, SyntheticEvent, useState} from "react";
 import useRouterFilter from "../hooks/useRouterFilter";
 import EnhancedTableHead, {TableHeadColumn} from "./EnhancedTableHead";
-import Paging from "../../models/Paging";
+import {IPaging} from "../../models/Paging";
 
 const EnhancedTable = (
     {
@@ -12,7 +12,7 @@ const EnhancedTable = (
         body,
         enableCheckBox = false
     }: {
-        paging?: Paging,
+        paging?: IPaging,
         tableHeadColumns: TableHeadColumn[]
         entities?: any[],
         body: (entity: any) => ReactFragment,
